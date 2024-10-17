@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+  <!-- Navbar Section -->
+  <div class="navbar">
+    <a href="https://www.linkedin.com/in/shaik-akram-3a6429228/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+      <i class="fab fa-linkedin"></i>
+    </a>
+    <a href="https://www.github.com/AkramShaik615" target="_blank" rel="noopener noreferrer" aria-label="Github">
+      <i class="fab fa-github"></i>
+    </a>
+    <a href="https://www.instagram.com/shaikakram98/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+      <i class="fab fa-instagram"></i>
+    </a>
+  </div>
+
+  <!-- center Section -->
+<div class="center-content">
+  <div class="flex flex-col items-center mt-10">
+    <h2 class="pb-2 text-4xl tracking-tighter lg:text-8xl">Akram Shaik</h2>
+    <span class="bg-gradient-to-r from-stone-300 to-stone-600 bg-clip-text text-3xl tracking-tight text-transparent">
+      Junior Software Engineer / Junior Java Developer
+    </span>
+    <p class="my-2 max-w-lg py-6 text-xl leading-relaxed tracking-tighter">
+    A dedicated Java developer with 1.5 years of experience in designing, developing, and maintaining scalable applications.
+    Proficient in core Java concepts, object-oriented programming, multi-threading, data structures and algorithms, and system design. 
+    Experienced with various frameworks and skilled in database management using MySQL. 
+    Passionate about clean code and best practices, I excel in collaborative environments, 
+    delivering high-quality software solutions that meet client and company needs.</p>
+    <!-- Resume Download with Floating Animation -->
+    <a href="https://drive.google.com/file/d/14CXvkW5pfXxEBIABVvfbPz5TiXN02cmS/view?usp=drive_link" class="download-resume">Download Resume</a>
+  </div>
+</div>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const resumeButton = document.querySelector('.download-resume');
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          resumeButton.classList.add('visible');
+        } else {
+          resumeButton.classList.remove('visible');
+        }
+      });
+    });
+    observer.observe(resumeButton);
+
+    const techItems = document.querySelectorAll('.tech-item');
+    const techObserver = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        } else {
+          entry.target.classList.remove('visible');
+        }
+      });
+    });
+    techItems.forEach(item => techObserver.observe(item));
+  });
+</script>
+
+<!-- Projects Section -->
+<div class="projects-container">
+  <h2>Projects</h2>
+  <br>
+  <div class="project-item">
+    <h3><i class="fas fa-snake"></i> Snake Game</h3>
+    <p>A classic snake game built using the technologies</p>
+    <div class="technologies">
+      <span class="tech-tag">HTML</span>
+      <span class="tech-tag">CSS</span>
+      <span class="tech-tag">Java</span>
+    </div>
+  </div>
+
+  <div class="project-item">
+    <h3>Tic-Tac-Toe</h3>
+    <p>A tic-tac-toe game implemented using the technologies</p>
+    <div class="technologies">
+      <span class="tech-tag">HTML</span>
+      <span class="tech-tag">CSS</span>
+      <span class="tech-tag">Java</span>
+    </div>
+  </div>
+</div>
+
+
+  <!-- Experience Section -->
+  <div class="experience-container">
+    <div class="experience-item">
+      <p class="experience-year">April/2023 - August/2024</p>
+      <div class="experience-details">
+        <h3>Java Developer - <span class="company">MIMSYS Technologies</span></h3>
+        <p>Developed and maintained web applications, ensuring responsiveness and performance optimization.</p>
+        <div class="technologies">
+          <span class="tech-tag">Java</span>
+          <span class="tech-tag">HTML</span>
+          <span class="tech-tag">CSS</span>
+          <span class="tech-tag">JavaScript</span>
+          <span class="tech-tag">AWS</span>
+          <span class="tech-tag">SQL</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Technologies Section -->
+  <div class="technologies-container">
+    <h2>Technologies</h2>
+    <div class="tech-items">
+      <div class="tech-item tech-item-1">
+        <i class="fab fa-java"></i>
+      </div>
+      <div class="tech-item tech-item-2">
+        <i class="fab fa-js"></i>
+      </div>
+      <div class="tech-item tech-item-3">
+        <i class="fab fa-html5"></i>
+      </div>
+      <div class="tech-item tech-item-4">
+        <i class="fab fa-css3-alt"></i>
+      </div>
+      <div class="tech-item tech-item-5">
+        <i class="fab fa-aws"></i>
+      </div>
+      <div class="tech-item tech-item-6">
+        <i class="fas fa-database"></i>
+      </div>
+      <div class="tech-item tech-item-7">
+      <i class="fab fa-c"></i>
+      <p>C</p>
+    </div>
+    <div class="tech-item tech-item-8">
+      <i class="fab fa-vuejs"></i>
+      <p>VB</p>
+    </div>
+    <div class="tech-item tech-item-9">
+      <i class="fab fa-git"></i>
+      <p>Git</p>
+    </div>
+    <div class="tech-item tech-item-10">
+      <i class="fab fa-github"></i>
+      <p>GitHub</p>
+    </div>
+    <div class="tech-item tech-item-11">
+      <i class="fab fa-windows"></i>
+      <p>Windows</p>
+    </div>
+    <div class="tech-item tech-item-12">
+      <i class="fab fa-linux"></i>
+      <p>Linux</p>
+    </div>
+    </div>
+  </div>
+
+  <!-- Contact Section -->
+<div class="contact-container">
+  <h2>Get in Touch</h2>
+  <div class="text-center">
+    <p>Jakkasandra, 3rd block, Koramangala, Bengaluru - 560034</p>
+    <a href="tel:+1234567890">7093742514</a><br>
+    <a href="mailto:akramroy813@gmail.com">akramroy813@gmail.com</a>
+    <a href="mailto:akramshaik.akrm@gmail.com">akramshaik.akrm@gmail.com</a>
+  </div>
+</div>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    // Observer for the resume button
+    const resumeButton = document.querySelector('.download-resume');
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          resumeButton.classList.add('visible');
+        } else {
+          resumeButton.classList.remove('visible');
+        }
+      });
+    });
+    observer.observe(resumeButton);
+
+    // Observer for technologies section
+    const techItems = document.querySelectorAll('.tech-item');
+    const techObserver = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        } else {
+          entry.target.classList.remove('visible');
+        }
+      });
+    });
+    techItems.forEach(item => techObserver.observe(item));
+
+    // Observer for contact section heading and details
+    const contactHeading = document.querySelector('.contact-container h2');
+    const contactDetails = document.querySelectorAll('.text-center p, .text-center a');
+
+    const contactObserver = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        } else {
+          entry.target.classList.remove('visible');
+        }
+      });
+    });
+
+    // Observe contact heading
+    contactObserver.observe(contactHeading);
+
+    // Observe contact details (address, phone, email)
+    contactDetails.forEach(detail => contactObserver.observe(detail));
+  });
+</script>
+
+
+</body>
+</html>

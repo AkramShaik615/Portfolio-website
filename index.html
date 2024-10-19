@@ -34,8 +34,8 @@
     Experienced with various frameworks and skilled in database management using MySQL. 
     Passionate about clean code and best practices, I excel in collaborative environments, 
     delivering high-quality software solutions that meet client and company needs.</p>
-    <!-- Resume Download with Floating Animation -->
-    <a href="https://drive.google.com/file/d/14CXvkW5pfXxEBIABVvfbPz5TiXN02cmS/view?usp=drive_link" class="download-resume">Download Resume</a>
+   
+    <a href="https://github.com/AkramShaik615/AkramShaik615/blob/main/Resume_Akram.pdf" class="download-resume">Download Resume</a>
   </div>
 </div>
 
@@ -174,7 +174,7 @@
 
 <script>
   document.addEventListener('DOMContentLoaded', function() {
-    // Observer for the resume button
+    
     const resumeButton = document.querySelector('.download-resume');
     const observer = new IntersectionObserver(entries => {
       entries.forEach(entry => {
@@ -200,7 +200,7 @@
     });
     techItems.forEach(item => techObserver.observe(item));
 
-    // Observer for contact section heading and details
+   
     const contactHeading = document.querySelector('.contact-container h2');
     const contactDetails = document.querySelectorAll('.text-center p, .text-center a');
 
@@ -214,10 +214,9 @@
       });
     });
 
-    // Observe contact heading
+   
     contactObserver.observe(contactHeading);
-
-    // Observe contact details (address, phone, email)
+    
     contactDetails.forEach(detail => contactObserver.observe(detail));
   });
 </script>

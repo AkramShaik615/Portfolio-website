@@ -1,4 +1,3 @@
-/* General Styles */
 body {
   background-color: #2c2c2c; /* Light black */
   color: #f9f9f9; /* Set text color to maintain contrast */
@@ -7,7 +6,7 @@ body {
   font-family: Arial, sans-serif; /* Ensure a consistent font */
 }
 
-/* Basic styling for the navbar */
+/* navbar */
 .navbar {
   position: relative; /* Fixes the navbar at the top of the page */
   top: 0;
@@ -75,6 +74,7 @@ body {
   text-align: center; /* Center the title text */
 }
 
+/* Project Item Styling */
 .project-item {
   background-color: #1c1c1c; /* Background color for project items */
   border-radius: 10px; /* Rounded corners */
@@ -82,13 +82,48 @@ body {
   width: 100%; /* Full width for smaller screens */
   max-width: 500px; /* Maximum width to maintain a consistent look */
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+  position: relative; /* Ensure position for icons */
+  transition: transform 0.2s, background-color 0.2s, border 0.3s; /* Smooth transition */
+  text-align: center; /* Center the content inside each project item */
+}
+
+/* Icon Styling */
+.project-item .icon {
+  font-size: 2rem; /* Adjust size as needed */
+  color: #f9f9f9; /* Icon color */
+  transition: color 0.3s ease;
+}
+
+/* Play Icon Styling */
+.play-icon {
+  color: #ffffff; /* Change the play button color to white */
+  transition: color 0.3s ease; /* Smooth transition for color change */
+}
+
+/* Hover effect for play icon */
+.play-icon:hover {
+  color: #ff0000; /* Change color to red on hover */
+}
+
+/* Project Title Styling */
+.project-title {
+  font-size: 1.5rem; /* Title size */
+  margin-top: 10px; /* Space for the title */
 }
 
 /* Hover effect for project items */
 .project-item:hover {
   background-color: #2e2e2e; /* Darker shade on hover */
   transform: scale(1.02); /* Slight scale up */
-  transition: transform 0.2s, background-color 0.2s; /* Smooth transition */
+  border: 2px solid #0073b1; /* Add border on hover */
+}
+
+/* Separator for Projects */
+.project-separator {
+  width: 100%;
+  height: 2px; /* Thickness of the separator */
+  background-color: #2c2c2c; /* Color of the separator */
+  margin: 20px 0; /* Space above and below the separator */
 }
 
 /* Responsive Design */
@@ -105,47 +140,6 @@ body {
   }
 }
 
-.technologies {
-  display: flex; /* Flexbox for technology tags */
-  justify-content: center; /* Center tags horizontally */
-  gap: 10px; /* Space between tags */
-  margin-top: 10px; /* Space above technology tags */
-}
-
-.tech-tag {
-  background-color: #333; /* Background color for tech tags */
-  color: #f9f9f9; /* Text color for tech tags */
-  padding: 5px 10px; /* Padding for tech tags */
-  border-radius: 5px; /* Rounded corners for tech tags */
-  font-size: 0.875rem; /* Font size for tech tags */
-}
-
-.technologies {
-  display: flex;
-  justify-content: center;
-  gap: 10px;
-  margin-top: 10px;
-}
-
-.tech-tag {
-  background-color: #333;
-  color: #f9f9f9;
-  padding: 5px 10px;
-  border-radius: 5px;
-  font-size: 0.875rem;
-}
-
-/* Responsive Design */
-@media (min-width: 768px) {
-  .projects-container {
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
-
-  .project-item {
-    width: 45%;
-  }
-}
 
 /* Experience Section Styling */
 .experience-container {
@@ -157,47 +151,52 @@ body {
 }
 
 .experience-item {
-  background-color: #1c1c1c;
-  border-radius: 10px;
-  padding: 20px;
-  width: 100%;
-  max-width: 500px;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  background-color: #1c1c1c; /* Background color */
+  border-radius: 10px; /* Rounded corners */
+  padding: 20px; /* Padding inside */
+  width: 100%; /* Full width */
+  max-width: 500px; /* Maximum width */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+  transition: transform 0.2s, background-color 0.2s, border 0.3s; /* Smooth transition */
 }
 
+/* Year Styling */
 .experience-year {
-  font-size: 1.25rem;
-  font-weight: bold;
+  font-size: 1.25rem; /* Font size for year */
+  font-weight: bold; /* Bold font */
   color: #f9f9f9; /* Set text color to white */
 }
 
 .experience-details {
-  margin-top: 16px;
+  margin-top: 16px; /* Space above details */
 }
 
+/* Hover effect for experience items */
 .experience-item:hover {
   background-color: #2e2e2e; /* Darker shade on hover */
   transform: scale(1.02); /* Slight scale up */
-  transition: transform 0.2s, background-color 0.2s;
+  border: 2px solid #0073b1; /* Add border on hover */
 }
 
+/* Details Styling */
 .experience-details h3 {
-  margin-bottom: 8px;
-  font-size: 1.5rem;
-  font-weight: 600;
+  margin-bottom: 8px; /* Space below heading */
+  font-size: 1.5rem; /* Heading font size */
+  font-weight: 600; /* Semi-bold font */
   color: #f9f9f9; /* Set text color to white */
 }
 
 .experience-details span {
-  font-size: 0.875rem;
+  font-size: 0.875rem; /* Font size for additional info */
   color: #f9f9f9; /* Set text color to white */
 }
 
 .experience-details p {
-  margin-bottom: 16px;
+  margin-bottom: 16px; /* Space below paragraph */
   color: #f9f9f9; /* Set text color to white */
-  font-size: 1rem;
+  font-size: 1rem; /* Font size for description */
 }
+
 
 /* Contact Section Styling */
 .contact-container {

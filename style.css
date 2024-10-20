@@ -58,7 +58,7 @@ body {
   margin-top: 50px; /* Add some top margin to space it from the navbar */
 }
 
-/* Projects Section  */
+/* Projects Section Styling */
 .projects-container {
   display: flex;
   flex-direction: column; /* Stack items vertically on small screens */
